@@ -21,8 +21,6 @@ button{
 }
 
 button:hover{
-  opacity: 80%;
-  transition: 1s;
   cursor: pointer;
 }
 
