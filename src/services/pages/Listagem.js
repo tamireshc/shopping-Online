@@ -79,10 +79,12 @@ class Listagem extends React.Component {
         </div>
 
         <div>
-          <header>
-            <img src={ car } alt="carrinho" />
-            <h1>Shopping Online</h1>
-          </header>
+          <Link to="/">
+            <header>
+              <img src={ car } alt="carrinho" />
+              <h1>Shopping Online</h1>
+            </header>
+          </Link>
           <p data-testid="home-initial-message">
             Digite algum termo de pesquisa ou escolha uma categoria.
           </p>
@@ -120,7 +122,7 @@ class Listagem extends React.Component {
                 <Card
                   name={ item.title }
                   image={ item.thumbnail }
-                  price={ item.price }
+                  price={ item.price.toFixed(2) }
                   id={ item.id }
                 />
                 <button
@@ -141,7 +143,7 @@ class Listagem extends React.Component {
                 <Card
                   name={ item.title }
                   image={ item.thumbnail }
-                  price={ item.price }
+                  price={ item.price.toFixed(2) }
                   id={ item.id }
                 />
                 <button

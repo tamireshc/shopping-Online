@@ -1,18 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: #313130;
 }
 
 img {
   max-height: 100px;
 }
 
-body{
+body {
   background-color: #EDEDED;
 }
 
-button{
+button {
   color: white;
   background-color: rgb(15, 15, 206);
   border: none;
@@ -20,20 +21,25 @@ button{
   font-size: 0.9em;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
 header {
   display: flex;
   background-color: #FFF159;
-  padding: 30px;
+  padding: 30px 50px;
   margin-bottom: 30px;
   width: 85vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24)
 }
 
-header h1{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+.header-car {
+  width: 100vw;
+}
+
+header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex-grow: 1;
 }
 
@@ -54,7 +60,7 @@ header img {
   text-align: center;
 }
 
-.search{
+.search {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,23 +80,23 @@ header img {
   background-color: #EDEDED;
   color: #313130;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
-.button-car img{
+.button-car img {
   height: 40px;
   cursor: pointer;
   margin-right: 10px;
 }
 
-.button-car img:hover{
+.button-car img:hover {
   background-color: #EDEDED;
   opacity: 50%;
   transition: 1s;
 }
 
-.button-car p{
+.button-car p {
   font-size: 1.1em;
   padding-top: 5px;
 }
@@ -101,9 +107,9 @@ header img {
   background-color: #313130;
 }
 
-.categorias p{
+.categorias p {
   padding: 20px 40px;
-  background:rgb(14, 14, 30); 
+  background: rgb(14, 14, 30);
   color: white;
   font-weight: 100;
   font-family: sans-serif;
@@ -112,9 +118,9 @@ header img {
 }
 
 .categorias button {
-  background-color:#313130;
+  background-color: #313130;
   color: rgb(252, 249, 249);
-  padding: 10px 20px ;
+  padding: 10px 20px;
   border-top: 0.5px solid white;
   height: 60px;
 }
@@ -142,9 +148,9 @@ header img {
 }
 
 .products {
- max-width: 200px;
- background-color: white;
- flex-grow: 1;
+  max-width: 200px;
+  background-color: white;
+  flex-grow: 1;
   max-height: 300px;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -153,21 +159,21 @@ header img {
   border-radius: 5px;
 }
 
-.products p:first-child{
+.products p:first-child {
   height: 60px;
   overflow: hidden;
   margin-bottom: 20px;
   color: rgb(25, 24, 24);
 }
 
-.products p:last-child{
+.products p:last-child {
   margin: 5px;
   color: rgb(10, 46, 27);
   font-weight: bold;
   font-size: 1.2em;
 }
 
-.products button{
+.products button {
   margin-top: 20px;
   font-size: 0.9em;
   padding: 10px 30px;
@@ -175,4 +181,116 @@ header img {
 
 [data-testid="product"] {
   box-shadow: none
+}
+
+.car-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-on-car {
+  width: 300px;
+
+}
+
+.list-on-car button {
+  border-radius: 30px;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+
+}
+
+.car-item {
+  padding: 10px 30px;
+  width: 200px;
+}
+
+.buttonsCar {
+  margin: 0 auto;
+  text-align: center;
+}
+
+[data-testid="shopping-cart-product-name"] {
+  margin: 20px 0px;
+}
+
+.product-details-container {
+  display: flex;
+  background-color: white;
+  margin: 40px 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 80px 100px;
+}
+
+.container-button-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-title {
+  color: green;
+}
+
+.container-button-details p {
+  max-width: 20vw;
+  margin: 10px;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+.container-button-details p strong {
+  color: blue;
+  font-weight: 200;
+}
+
+.product-detaisl-img-container {
+  display: flex;
+  width: 70vw;
+  background-color: white;
+}
+
+.product-detaisl-img-container img {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.product-detail-title {
+  max-width: 300px;
+  margin-left: 40px;
+}
+
+[data-testid="product-detail-name"] {
+  font-family: sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.price-product-detais {
+  font-size: 2.5em;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+[data-testid="product-detail-add-to-cart"] {
+  color: #EDEDED;
+  font-weight: bolder;
+  background-color: rgb(77, 97, 244);
+}
+
+.second-button-car {
+  background-color: rgb(230, 239, 247);
+  font-weight: bolder;
+}
+
+[data-testid="shopping-cart-button"] {
+  color: rgb(47, 127, 239);
+}
+
+.container-button-details button {
+  border-radius: 5px;
+  margin: 10px 0px;
+  height: 50px;
 }
