@@ -17,7 +17,7 @@ button{
   background-color: rgb(15, 15, 206);
   border: none;
   padding: 10px 20px;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 button:hover{
@@ -42,9 +42,7 @@ header h1{
 header img {
   height: 40px;
   margin-right: 20px;
-  
 }
-
 
 .App {
   display: flex;
@@ -54,7 +52,7 @@ header img {
   font-family: sans-serif;
   font-weight: 100;
   margin-bottom: 30px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
 }
 
@@ -63,7 +61,6 @@ header img {
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  
 }
 
 [data-testid="query-input"] {
@@ -72,7 +69,7 @@ header img {
   margin-left: 40px;
   max-width: 400px;
   min-width: 300px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .button-car {
@@ -113,7 +110,7 @@ header img {
   font-weight: 100;
   font-family: sans-serif;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .categorias button {
@@ -156,7 +153,6 @@ header img {
   margin: 15px;
   text-align: center;
   border-radius: 5px;
-
 }
 
 .products p:first-child{
