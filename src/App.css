@@ -21,7 +21,7 @@ button{
 }
 
 button:hover{
-  opacity: 70%;
+  opacity: 80%;
   transition: 1s;
   cursor: pointer;
 }
@@ -44,6 +44,7 @@ header img {
   margin-right: 20px;
   
 }
+
 
 .App {
   display: flex;
@@ -76,17 +77,27 @@ header img {
 
 .button-car {
   background-color: #EDEDED;
+  color: #313130;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .button-car img{
   height: 40px;
-  cursor: pointer
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .button-car img:hover{
+  background-color: #EDEDED;
   opacity: 50%;
   transition: 1s;
- 
+}
+
+.button-car p{
+  font-size: 1.1em;
+  padding-top: 5px;
 }
 
 .categorias {

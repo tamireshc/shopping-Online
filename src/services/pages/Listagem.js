@@ -86,26 +86,30 @@ class Listagem extends React.Component {
           <p data-testid="home-initial-message">
             Digite algum termo de pesquisa ou escolha uma categoria.
           </p>
-          <div className='search'>
-          <input
-            type="text"
-            name="inputValue"
-            data-testid="query-input"
-            onChange={ this.handleChange }
-            value={ inputValue }
-          />
-          <button
-            type="button"
-            data-testid="query-button"
-            onClick={ () => this.searchProduct(inputValue) }
-          >
-            Pesquisar
-          </button>
-          <Link data-testid="shopping-cart-button" to="/Carrinho">
-            <button type="button" className="button-car">
-              <img src={ car } alt="carrinho" />
+          <div className="search">
+            <input
+              type="text"
+              name="inputValue"
+              data-testid="query-input"
+              onChange={ this.handleChange }
+              value={ inputValue }
+            />
+            <button
+              type="button"
+              data-testid="query-button"
+              onClick={ () => this.searchProduct(inputValue) }
+            >
+              Pesquisar
             </button>
-          </Link>
+            <Link data-testid="shopping-cart-button" to="/Carrinho">
+              <button type="button" className="button-car">
+                <img
+                  src={ car }
+                  alt="carrinhoIMG"
+                />
+                <p>Ir para o Carrinho</p>
+              </button>
+            </Link>
           </div>
           { products && !products[0] && <p>Nenhum produto foi encontrado</p> }
 
