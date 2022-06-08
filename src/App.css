@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+img {
+  max-height: 100px;
+}
+
+body{
+  background-color: #EDEDED;
+}
+
+button{
+  color: white;
+  background-color: rgb(15, 15, 206);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+button:hover{
+  opacity: 70%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  background-color: #FFF159;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 85vw;
+}
+
+header h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  flex-grow: 1;
+}
+
+header img {
+  height: 40px;
+  margin-right: 20px;
+  
+}
+
+.App {
+  display: flex;
+}
+
+[data-testid="home-initial-message"] {
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  
+}
+
+[data-testid="query-input"] {
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 40px;
+  max-width: 400px;
+  min-width: 300px;
+  font-size: 1.2em;
+}
+
+.button-car {
+  background-color: #EDEDED;
+}
+
+.button-car img{
+  height: 40px;
+  cursor: pointer
+}
+
+.button-car img:hover{
+  opacity: 50%;
+  transition: 1s;
+ 
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+  background-color: #313130;
+}
+
+.categorias p{
+  padding: 20px 40px;
+  background:rgb(14, 14, 30); 
+  color: white;
+  font-weight: 100;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1em;
+}
+
+.categorias button {
+  background-color:#313130;
+  color: rgb(252, 249, 249);
+  padding: 10px 20px ;
+  border-top: 0.5px solid white;
+  height: 60px;
+}
+
+.buttonsCar {
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.buttonsCar button {
+  height: 30px;
+  width: 30px;
+}
+
+.buttonsCar p {
+  height: 30px;
+  width: 30px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products {
+ max-width: 200px;
+ background-color: white;
+ flex-grow: 1;
+  max-height: 300px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 15px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.products p:first-child{
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  color: rgb(25, 24, 24);
+}
+
+.products p:last-child{
+  margin: 5px;
+  color: rgb(10, 46, 27);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.products button{
+  margin-top: 20px;
+  font-size: 0.9em;
+  padding: 10px 30px;
+}
+
+[data-testid="product"] {
+  box-shadow: none
+}
